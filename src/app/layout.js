@@ -1,3 +1,4 @@
+import Head from "next/head";
 import "./globals.css";
 import "98.css";
 import { Inter } from "next/font/google";
@@ -12,6 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="stylesheet" href="https://unpkg.com/98.css" />
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );

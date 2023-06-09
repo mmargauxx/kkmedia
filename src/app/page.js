@@ -1,13 +1,8 @@
-import Head from "next/head";
-
 export default function Home() {
   return (
     <>
-      <Head>
-        <link rel="stylesheet" href="https://unpkg.com/98.css" />
-      </Head>
       <main className="flex min-h-screen flex-col items-center p-24 bg-teal-700">
-        <div className="window" style={{ width: 400 }}>
+        <div className="window w-[400px]">
           <div className="title-bar">
             <div className="title-bar-text">Kevin</div>
             <div className="title-bar-controls">
