@@ -40,7 +40,7 @@ export default function Home() {
           <div className="window" role="tabpanel">
             <div className="window-body">
               <h1 className="text-2xl">Aktuelles Projekt:</h1>
-              <div className="flex justify-center gap-4">
+              <div className="flex flex-col lg:flex-row justify-center gap-4">
                 <p>
                   #letsdrivemercedes <br></br>
                   Matthias Malmedie besucht das G-Class Experience Center
@@ -49,7 +49,7 @@ export default function Home() {
                   G-Klasse.
                 </p>
                 <iframe
-                  className="w-[1000px] h-[300px]"
+                  className="w-full lg:w-[1000px] min-h-min lg:h-[300px]"
                   src="https://www.youtube.com/embed/2aTu5DK2zSM"
                 ></iframe>
               </div>
