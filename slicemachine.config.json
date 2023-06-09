@@ -1,0 +1,5 @@
+{
+  "repositoryName": "kk-media",
+  "adapter": "@slicemachine/adapter-next",
+  "libraries": ["./slices"]
+}

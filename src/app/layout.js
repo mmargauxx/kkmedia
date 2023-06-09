@@ -1,3 +1,5 @@
+import { PrismicPreview } from "@prismicio/next";
+import { repositoryName } from "@prismicio/client";
 import Head from "next/head";
 import "./globals.css";
 import "98.css";
@@ -16,7 +18,10 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="stylesheet" href="https://unpkg.com/98.css" />
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <PrismicPreview repositoryName={repositoryName} />
+      </body>
     </html>
   );
 }
